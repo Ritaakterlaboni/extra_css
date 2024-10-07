@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotate Example</title>
+  <style>
+    .rotated-element {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      transform: rotate(45deg); /* 45 ডিগ্রি ঘুরাবে */
+    }
+
+    .rotate-element {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(0, 185, 247);
+      transform: rotate(120deg); 
+    }
+
+    .gredint-element {
+      width: 100px;
+      height: 100px;
+      background:radial-gradient(circle,red,blue);      /*majkhan thake gol hoye redient color hobe*/
+      transform: rotate(120deg); 
+    }
+
+    .gredintd-element {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(to right,red,teal);
+      transform: rotate(180deg); 
+    }
+
+    .gredints-element {
+      width: 100px;
+      height: 100px;
+      background: repeating-linear-gradient(to right,pink,teal 20%);
+      transform: rotate(180deg); 
+    }
+
+    .gredinte-element {
+      width: 100px;
+      height: 100px;
+      background: repeating-radial-gradient(circle,pink,skyblue 20%);
+      transform: rotate(180deg); 
+    }
+
+    .gredinted-element {
+      width: 100px;
+      height: 100px;
+      background: conic-gradient(from 45deg,rgb(121, 112, 247),skyblue,red,yellow,aqua,magenta );
+      transform: rotate(180deg); 
+    }
+
+    .gredinted-element:hover {
+        /*cursor:auto,default,help,text,pointer,none,context-menu,wait,progress,cell,crosshair,varticaltext,alias,copy,move,no-drop;*/
+        
+
+    }
+    .badmenton{
+      padding:100px;
+      filter:drop-shadow(30px 60px 10px red);     /*30px aita holo koto tuk opre jaibo aida bujhai 60px holo koto tuk nica jaibo shadow aida bujhai 10px holo koto tuk blur hoibo aita*/
+    }
+
+    .faded_bg{
+      border-image: fill 0 linear-gradient(#0001,#000)
+    }
+
+
+  </style>
+</head>
+<body>
+
+
+
+  <div class="rotated-element"></div>
+  <div class="rotate-element"></div>
+  <div class="gredint-element"></div>
+  <div class="gredintd-element"></div>
+  <div class="gredints-element"></div>
+  <div class="gredinte-element"></div>
+  <div class="gredinted-element"></div>
+
+<div class="badmenton" >
+  <img src="images/bateman-removebg-preview.png">
+</div>
+
+<div class="faded_bg">
+  <img src="images/bateman.jpg">
+</div>
+
+
+
+
+</body>
+</html>
